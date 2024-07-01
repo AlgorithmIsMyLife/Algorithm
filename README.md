@@ -58,10 +58,11 @@
 ## 참여 방법
 
 1. 이 repository를 포크합니다.
-2. 매일 알고리즘 문제를 3개 풀고 코드를 업로드합니다.
-3. pull request를 요청합니다.
-4. 다른 참여자들의 코드를 리뷰합니다.
-5. 100문제를 달성하여 Level 1 AlgorithmRobot 배지를 획득합니다.
+2. 이슈 탭에 관리자가 생성해놓은 하루 3문제 이슈를 클릭합니다. 이 이슈와 링크된 브랜치를 생성합니다. [링크](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-a-branch-for-an-issue) 를 참조하세요
+3. 매일 알고리즘 문제를 3개 풀고 코드를 업로드(push)합니다.
+4. pull request를 요청합니다 (자동으로 요청됩니다).
+5. 다른 참여자들의 코드를 리뷰합니다.
+6. 100문제를 달성하여 Level 1 AlgorithmRobot 배지를 획득합니다.
 
 ## FAQ
 
