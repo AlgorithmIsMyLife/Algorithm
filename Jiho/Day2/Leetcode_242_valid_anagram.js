@@ -6,6 +6,7 @@ const input = fs
   .split("\n");
 
 const [s, t] = input;
+// s: string, t: string
 var isAnagram = function (s, t) {
   // #1. 저장 배열
   const arr = new Array(26).fill(0);
