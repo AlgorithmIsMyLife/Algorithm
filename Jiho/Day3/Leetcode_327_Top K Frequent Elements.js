@@ -13,6 +13,14 @@ var topKFrequent = function (nums, k) {
     // #1. 없음
     if (!obj[num]) {
       obj[num] = 1;
+      const fs = require("fs");
+      const input = fs
+        .readFileSync(
+          process.platform === "linux" ? "/dev/stdin" : "../input.txt"
+        )
+        .toString()
+        .trim()
+        .split("\n");
     }
     // #2. 있음
     else {
