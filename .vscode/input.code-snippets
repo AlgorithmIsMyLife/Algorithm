@@ -1,0 +1,15 @@
+{
+  "ReadFileSnippet": {
+    "prefix": "rdipt",
+    "body": [
+      "const fs = require(\"fs\");",
+      "const input = fs",
+      "  .readFileSync(process.platform === \"linux\" ? \"/dev/stdin\" : \"${1:../input.txt}\")",
+      "  .toString()",
+      "  .trim()",
+      "  .split(\"\\n\");"
+    ],
+    "description": "Read file input with fs",
+    "scope": "javascript,typescript"
+  }
+}
