@@ -55,3 +55,13 @@ function bfs(x, y) {
 console.log(answer.length);
 answer.sort((a, b) => a - b);
 answer.forEach((item) => console.log(item));
+
+
+/*
+교훈
+1. 필요하지 않은 경우의 수에 대해서는 BFS할 필요가 없다. 
+-> 검증이 필요한 곳에서만 BFS를 쪼개서 할 수 있다.
+2. 2차원 배열 bfs (정형화된 패턴)
+dx dy로 방향 배열을 선언하고,
+nrow, ncol을 만드는 식으로 작성 
+*/
