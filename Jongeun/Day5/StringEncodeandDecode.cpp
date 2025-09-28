@@ -1,37 +1,53 @@
-class Solution
-{
-public:
-    string encode(vector<string> &strs)
-    {
-        string result = "";
+// #include <iostream>
+// #include <vector>
+// #include <string>
+// using namespace std;
 
-        for (int i = 0; i < strs.size(); i++)
-        {
-            string str = strs[i];
-            result += to_string(str.size()) + "#" + str;
-        }
+// class Solution
+// {
+// public:
+//     string encode(vector<string> &strs)
+//     {
+//         string res = "";
 
-        return result;
-    }
+//         for (auto i : strs)
+//         {
+//             int size = i.size();
+//             res += (std::to_string(size) + i);
+//         }
+//         return res;
+//     }
 
-    vector<string> decode(string s)
-    {
-        vector<string> result;
+//     vector<string> decode(string s)
+//     {
+//         vector<string> res;
+//         int i = 0;
+//         while (i < s.size())
+//         {
+//             int size = s[i] - '0';
+//             std::string str2 = s.substr(i + 1, size);
+//             res.push_back(str2);
+//             i += (size + 1);
+//         }
 
-        int i = 0;
-        while (i < s.size())
-        {
-            int j = i;
-            while (s[j] != '#')
-            {
-                j++;
-            }
-            int length = stoi(s.substr(i, j - i));
-            string str = s.substr(j + 1, length);
-            result.push_back(str);
-            i = j + 1 + length;
-        }
+//         return res;
+//     }
+// };
 
-        return result;
-    }
-};
+// int main()
+// {
+//     Solution obj;
+//     vector<string> strs = {"we", "say", ":", "yes", "!@#$%^&*()"};
+//     string encoded = obj.encode(strs);
+//     cout << "Encoded: " << encoded << endl;
+
+//     vector<string> decoded = obj.decode(encoded);
+//     cout << "Decoded: ";
+//     for (auto i : decoded)
+//     {
+//         cout << i << " ";
+//     }
+//     cout << endl;
+
+//     return 0;
+// }
