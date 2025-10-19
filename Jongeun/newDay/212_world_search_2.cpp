@@ -54,7 +54,7 @@ public:
     int col = board[0].size();
     vector<vector<bool>> visited(row, vector<bool>(col));
 
-    dfs(i, j, row, col, root, board, temp, visited);
+    dfs(0, 0, row, col, root, board, temp, visited);
 
     vector<string> output;
 
