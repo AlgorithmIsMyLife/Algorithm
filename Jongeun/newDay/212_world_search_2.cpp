@@ -54,11 +54,8 @@ public:
     int col = board[0].size();
     vector<vector<bool>> visited(row, vector<bool>(col));
 
-    for (int i = 0; i < row; i++) {
-      for (int j = 0; j < col; j++) {
-        dfs(i, j, row, col, root, board, temp, visited);
-      }
-    }
+    dfs(i, j, row, col, root, board, temp, visited);
+
     vector<string> output;
 
     for (auto &s : words) {
@@ -76,6 +73,9 @@ public:
 
     if (i < 0 || i >= row || j < 0 || j >= col) {
       insert(root, temp);
+      string copy(temp);
+      reverse(copy.begin(), copy.end());
+      insert(root, copy);
       return;
     }
     if (visited[i][j]) {
